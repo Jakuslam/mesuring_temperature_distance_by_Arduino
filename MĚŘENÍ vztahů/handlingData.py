@@ -4,9 +4,10 @@ distance = []
 
 finalTemp = []
 finalDist = []
-
+path = r"C:\Users\Kuba\Desktop\Seminární práce fyzika\MĚŘENÍ vztahů\data.txt"
 result = {}
-f = open("data.txt", "r")
+
+f = open(path, "r")
 l = f.readlines()
 for line in l: #roztřídí z informace dokumentu 
     a,b = line.split(",")
@@ -33,9 +34,9 @@ print(result)
 plt.plot(finalDist, finalTemp)
   
 # naming the x axis
-plt.xlabel('vzdálenost')
+plt.xlabel('vzdálenost [cm]')
 # naming the y axis
-plt.ylabel('teplota')
+plt.ylabel('teplota [°C]')
   
 # function to show the plot
 plt.show()
