@@ -138,18 +138,13 @@ void sayNumber(int temp){
         tmrpcm.play("ninety.wav");
       break;
     }
-
   }
-  
-
-
   Serial.println(decimal);
   Serial.println(rest);
 }
 
 void desideWhatToSay(int temp){
   sayNumber(temp);
-
 }
 
 void loop() {
